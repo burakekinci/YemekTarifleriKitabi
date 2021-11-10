@@ -10,17 +10,19 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="151dp"
-        android:layout_height="142dp"
+        android:layout_width="248dp"
+        android:layout_height="169dp"
         android:onClick="gorselSec"
+        android:scaleType="fitXY"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.162"
+        app:srcCompat="@drawable/gorselsecimi"
         tools:ignore="SpeakableTextPresentCheck"
-        tools:src="@tools:sample/avatars" />
+        tools:src="@drawable/gorselsecimi" />
 
     <EditText
         android:id="@+id/yemekIsmiTextId"
