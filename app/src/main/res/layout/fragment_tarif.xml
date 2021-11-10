@@ -10,30 +10,32 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="177dp"
-        android:layout_height="172dp"
+        android:layout_width="151dp"
+        android:layout_height="142dp"
+        android:onClick="gorselSec"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.162"
+        tools:ignore="SpeakableTextPresentCheck"
         tools:src="@tools:sample/avatars" />
 
     <EditText
         android:id="@+id/yemekIsmiTextId"
         android:layout_width="275dp"
-        android:layout_height="0dp"
-        android:layout_marginTop="315dp"
-        android:layout_marginBottom="216dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="68dp"
         android:ems="10"
         android:hint="Yemek ismi giriniz..."
         android:inputType="textPersonName"
-        app:layout_constraintBottom_toTopOf="@+id/button"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
     <EditText
         android:id="@+id/yemekMalzemeTextId"
@@ -49,13 +51,16 @@
         app:layout_constraintTop_toBottomOf="@+id/yemekIsmiTextId" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/kaydetButtonId"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="97dp"
+        android:layout_marginStart="160dp"
+        android:layout_marginEnd="160dp"
+        android:layout_marginBottom="132dp"
         android:text="kaydet"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/yemekIsmiTextId" />
+        app:layout_constraintTop_toBottomOf="@+id/yemekMalzemeTextId" />
 </androidx.constraintlayout.widget.ConstraintLayout>
