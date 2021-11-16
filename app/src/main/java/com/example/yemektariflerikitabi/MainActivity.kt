@@ -27,7 +27,7 @@ class MainActivity : AppCompatActivity() {
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
 
         if(item.itemId == R.id.yemekEkleItem){
-            val action = ListeFragmentDirections.actionListeFragmentToTarifFragment()
+            val action = ListeFragmentDirections.actionListeFragmentToTarifFragment("menudenGeldim", 0)
 
             //activity_main.xml de bulunan navHostFragment'ın id si veriliyor
             Navigation.findNavController(this, R.id.fragmentContainerView).navigate(action)
